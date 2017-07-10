@@ -1,0 +1,16 @@
+// Shortcode elements bottom margin ------------------------------------------------------------------------------------
+.wpb_content_element, .ish-sc-element {
+	margin-bottom: 25px !important;
+}
+
+
+// ish-button ----------------------------------------------------------------------------------------------------------
+.ish-sc_button {
+	@extend %_trans-on;
+}
+
+
+// AddThis Social Share ------------------------------------------------------------------------------------------------
+.ish-part_content .ish-sc_social_share a {
+	border-bottom: none !important;
+}

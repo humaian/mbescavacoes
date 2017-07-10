@@ -1,0 +1,51 @@
+/*
+ * Default WordPress image alignment
+ */
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+div.alignright {float:right; margin:0 0 1em 1em !important}
+div.alignleft {float:left; margin:0 1em 1em 0 !important}
+div.aligncenter {display: block; margin-left: auto; margin-right: auto !important}
+
+.wp-caption {
+	padding: 0;
+	text-align: center;
+	max-width: 100%;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+	float: left;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+	float: right;
+}
+
+.wp-caption.aligncenter {
+	margin: 5px auto 20px auto;
+}
+
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+.wp-caption p.wp-caption-text {
+	margin: 0;
+	padding: 5px 4px 0;
+}
+.sticky { text-indent: 0; }
+.gallery-caption { text-indent: 0; }
+.bypostauthor { text-indent: 0; }

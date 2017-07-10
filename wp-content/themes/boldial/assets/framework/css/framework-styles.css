@@ -1,0 +1,219 @@
+/*
+* Backend sections
+*/
+
+.ishyoboy_framework_settings > table{
+    margin-bottom: 30px;
+}
+
+.ishyoboy_framework_settings hr{
+    border: 0;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.layout-select{
+
+}
+
+
+/*
+ *  Colors and custom CSS
+ */
+
+.ishyoboy_framework_settings .color_box{
+    display: block;
+    position: relative;
+    float: left;
+    width: 27px;
+    height: 27px;
+    margin-right: 3px;
+    background: url(../images/ishyoboy_select.png) top left;
+    z-index: 10;
+}
+
+.ishyoboy_framework_settings .colorpicker{
+    z-index: 50;
+}
+
+.ishyoboy_framework_settings .colorpicker input {
+    font-size: 9px;
+    height: 13px;
+}
+
+.ishyoboy_framework_settings textarea {
+    height: 350px;
+}
+
+/*
+ *  Fonts selector
+ */
+
+.ishyoboy_framework_settings .font-select{
+    width: 330px;
+}
+
+.ishyoboy_framework_settings .font-preview{
+    width: 330px;
+    font-size: 1.2em;
+    display: none;
+}
+
+.ishyoboy_framework_settings .font-preview h3 span{
+   font-weight: bold;
+}
+
+/*
+ *  Social icons
+ */
+
+.ishyoboy_framework_settings [class^="icon-"]:before,
+.ishyoboy_framework_settings [class*=" icon-"]:before {
+    font-size: 20px;
+}
+
+.ishyoboy_framework_settings [class^="icon-"],
+.ishyoboy_framework_settings [class*=" icon-"] {
+    width: 40px !important;
+    display: inline-block;
+}
+
+.ishyoboy_framework_settings .social tr:hover{
+    background: #EAF2FA;
+    cursor: move;
+}
+
+/*
+ *  Theme Selector
+ */
+
+.ishyoboy_framework_settings  .ishyoboy_theme_selector_theme{
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.ishyoboy_framework_settings  .ishyoboy_theme_selector_theme img{
+    width: 100%;
+    /*max-height: 100px;*/
+    border: 1px solid #DFDFDF;
+}
+
+.ishyoboy_framework_settings  .ishyoboy_theme_selector_theme:hover img{
+    border-color: #BBB;
+}
+
+
+/*
+ *  Color picker
+ */
+.ish_color_picker_container {
+	clear: both;
+	padding-top: 15px;
+	display: none;
+}
+
+
+/**
+ * WP 3.8 Fixes
+ */
+.ish-wp38-plus #slides_urls #_ishmb_slide_url_nw_boxitem #_ishmb_slide_url_nw {
+	margin-top: 1px;
+}
+
+.ish-wp38-plus span.ishyoboy-icon{
+	top: 13px;
+	left: 10px;
+}
+
+/***
+ * ISH ALL BTN SELECTORS
+ */
+
+.ish_meta_param ul.ish_btnlist_list{
+	margin: 0;
+}
+
+.ish_meta_param .ish_btnlist_list li{
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+
+.ish_meta_param .ish_btnlist_list li a{
+	display: inline-block;
+	border-color: #dfdfdf;
+	width: 31px;
+	height: 31px;
+
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	line-height: 31px;
+	color: #000000;
+
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-ms-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+
+	box-sizing: border-box;
+
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	transition-property: all;
+}
+
+.ish_meta_param .ish_btnlist_list li a:hover,
+.ish_meta_param .ish_btnlist_list li.active a{
+	border-color: #999999;
+	box-shadow: 0 0 6px #888888;
+}
+
+/***
+ * ISH COLOR SELECTOR
+ */
+.ish_meta_param .ish_color_selector_list li a{
+	font-size: 12px;
+}
+
+.ish_meta_param .ish_color_selector_list li a.ish-icon-cog{
+	opacity: 1;
+	background-color: #dfdfdf;
+	color: #ffffff;
+	border-color: #dfdfdf;
+	font-size: 16px;
+}
+
+.ish_meta_param .ish_btnlist_list li a.ish-icon-noneselected:hover,
+.ish_meta_param .ish_btnlist_list li.active a.ish-icon-noneselected:hover{
+	background-color: #dfdfdf;
+	color: #ffffff;
+	border-color: #dfdfdf;
+	box-shadow: none;
+}
+.ish_meta_param .ish_btnlist_list li.active a.ish-icon-noneselected{
+	background-color: transparent;
+	border-color: #dfdfdf;
+	box-shadow: none;
+}
+
+.ish_meta_param .ish_btnlist_list li a.ish-icon-noneselected{
+	color: #dfdfdf;
+}
+
+#ishyoboy_color_settings span.description {
+	clear: both;
+	display: block;
+}
+
+div.updated.ishyoboy_vc_version_notice{
+	border-left-color: #2ea2cc;
+}

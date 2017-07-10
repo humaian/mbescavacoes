@@ -1,0 +1,249 @@
+// Vars ****************************************************************************************************************
+$CONTENT_WIDTH: 1240px; 		// Main content width
+$CONTENT_PADDINGS_WIDTH: 60px;	// Left & right padding of the content 60px (full) -> 25px (768px)
+$CONTENT_PADDINGS_HEIGHT: 50px;	// Top & bottom padding of the content 50px (full) -> 25px (768px)
+
+
+
+// Mixins **************************************************************************************************************
+
+
+
+// Extends *************************************************************************************************************
+
+
+
+// Placeholders ********************************************************************************************************
+%_center-body {
+	max-width: $CONTENT_WIDTH;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+// Body ****************************************************************************************************************
+
+// Unboxed version -----------------------------------------------------------------------------------------------------
+.ish-unboxed .ish-wrapper-all {
+	width: 100%;
+}
+
+.ish-unboxed {
+	[class^="ish-part_"] .ish-row-notfull .ish-row_inner, [class*=" ish-part_"] .ish-row-notfull .ish-row_inner,
+	// VC
+	.ish-vc_row_inner {
+		@extend %_center-body;
+	}
+}
+
+
+// Full row ------------------------------------------------------------------------------------------------------------
+// Ish
+[class^="ish-part_"] .ish-row-full:not([class*="ish-row-full-padding"]) .ish-row_inner,
+[class*=" ish-part_"] .ish-row-full:not([class*="ish-row-full-padding"]) .ish-row_inner {
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+// VC
+[class^="ish-part_"] .ish-row-full:not([class*="ish-row-full-padding"]) .ish-vc_row_inner,
+[class*=" ish-part_"] .ish-row-full:not([class*="ish-row-full-padding"]) .ish-vc_row_inner {
+	max-width: 100%;
+	padding: 0;
+}
+
+[class^="ish-part_"] .ish-row-full-padding .ish-row_inner,
+[class*=" ish-part_"] .ish-row-full-padding .ish-row_inner,
+[class^="ish-part_"] .ish-row-full-padding .ish-vc_row_inner,
+[class*=" ish-part_"] .ish-row-full-padding .ish-vc_row_inner {
+	max-width: 100%;
+}
+
+
+
+// Boxed version -------------------------------------------------------------------------------------------------------
+.ish-boxed {
+	[class^="ish-part_"], [class*=" ish-part_"] {
+		@extend %_center-body;
+	}
+
+	.ish-wrapper-all {
+		margin: 0 auto;
+	}
+}
+
+
+// Paddings & margins --------------------------------------------------------------------------------------------------
+
+// Tagline
+.ish-part_tagline {
+	padding-top: $CONTENT_PADDINGS_HEIGHT;
+	padding-bottom: $CONTENT_PADDINGS_HEIGHT;
+}
+
+// Add left and right padding to all inner rows
+.ish-row_inner, .ish-vc_row_inner {
+	padding-left: $CONTENT_PADDINGS_WIDTH;
+	padding-right: $CONTENT_PADDINGS_WIDTH;
+}
+
+
+// Part content without sidebar
+.ish-part_content.ish-without-sidebar {
+	// Set padding top and bottom to all row inner
+	> .ish-row, > .wpb_row {
+		> .ish-row_inner, > .ish-vc_row_inner {
+			padding-top: $CONTENT_PADDINGS_HEIGHT;
+			padding-bottom: $CONTENT_PADDINGS_HEIGHT;
+		}
+	}
+
+	// Remove padding top if section goes after section
+	> .ish-row.ish-row_notsection + .ish-row.ish-row_notsection, > .wpb_row.ish-row_notsection + .wpb_row.ish-row_notsection {
+		> .ish-row_inner, > .ish-vc_row_inner {
+			padding-top: 0;
+		}
+	}
+
+	// Delete all padding if row is full
+	> .ish-row-full:not([class*="ish-row-full-padding"]) {
+		> .ish-row_inner, > .ish-vc_row_inner {
+			padding: 0 !important;
+		}
+	}
+}
+
+
+// Part content with sidebar
+.ish-part_content.ish-with-sidebar {
+
+	// left / right sidebar
+	.ish-with-left-sidebar {
+		float: right;
+	}
+
+	.ish-left-sidebar {
+		float: left;
+		margin-right: 2%;
+		margin-left: 0;
+	}
+
+	// Content - grid9
+	.ish-pc-content {
+		// Clear left and right padding if row is not section
+		.ish-row_notsection {
+			.ish-vc_row_inner {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		> .wpb_row {
+			// Set padding top and bottom to all row inner
+			> .ish-vc_row_inner {
+				padding-top: $CONTENT_PADDINGS_HEIGHT !important;
+				padding-bottom: $CONTENT_PADDINGS_HEIGHT !important;
+			}
+		}
+
+		// Add margin to last child if it's section
+		> .ish-row_section:last-child {
+			margin-bottom: 50px;
+		}
+
+		// Delete all padding if row is full
+		> .ish-row-full:not([class*="ish-row-full-padding"]) {
+			> .ish-row_inner, > .ish-vc_row_inner {
+				padding: 0 !important;
+			}
+		}
+	}
+
+	// Sidebar - grid3
+	.ish-main-sidebar {
+		padding-top: $CONTENT_PADDINGS_HEIGHT;
+		padding-bottom: $CONTENT_PADDINGS_HEIGHT;
+
+		> .ish-row > .ish-row_inner {
+			padding: 0 !important;
+
+			[class^="ish-grid"], [class*=" ish-grid"] {
+				width: 100%;
+			}
+		}
+
+		.widget {
+			padding-top: $CONTENT_PADDINGS_HEIGHT;
+		}
+
+		.ish-row:first-child .widget:first-child {
+			padding-top: 0 !important;
+		}
+	}
+}
+
+// Part content with sidebar - grid3 -----------------------------------------------------------------------------------
+
+
+
+// Search position & paddings ------------------------------------------------------------------------------------------
+.ish-part_searchbar {
+
+	div {
+		@extend %_center-body;
+
+		input[type="text"] {
+			padding: 0 $CONTENT_PADDINGS_WIDTH;
+		}
+	}
+}
+
+
+// Expandable center + paddings ----------------------------------------------------------------------------------------
+.ish-part_expandable {
+	.ish-row_inner {
+		@extend %_center-body;
+	}
+
+	.ish-pe-bg {
+		padding-top: $CONTENT_PADDINGS_HEIGHT;
+
+		> .ish-row {
+			padding-bottom: $CONTENT_PADDINGS_HEIGHT;
+		}
+	}
+}
+
+
+// Footer paddings
+.ish-part_footer {
+	.ish-row {
+		.ish-row_inner {
+			padding-top: $CONTENT_PADDINGS_HEIGHT;
+			padding-bottom: 0;
+		}
+
+		&:last-child .ish-row_inner {
+			padding-bottom: $CONTENT_PADDINGS_HEIGHT;
+		}
+	}
+}
+
+// Sidebar as shortcode
+
+.ish-sc_sidebar {
+
+	> .ish-row > .ish-row_inner {
+		padding: 0 0 $CONTENT_PADDINGS_HEIGHT 0;
+	}
+
+	> .ish-row:last-child .ish-row_inner {
+		padding-bottom: 0;
+	}
+
+}
+
+.ish-row-full-padding .ish-sc_sidebar .ish-row > .ish-row_inner {
+	max-width: 100%;
+}

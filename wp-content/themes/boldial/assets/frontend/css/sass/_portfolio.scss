@@ -1,0 +1,591 @@
+// Portfolio shortcode layout
+.ish-sc_portfolio {
+	display: table;
+	width: 100%;
+
+	// Portfolio filter
+	.ish-section-filter {
+		margin-bottom: 25px !important;
+
+		.ish-sc-element {
+			// JS Preloading
+			visibility: hidden;
+		}
+	}
+
+	// Portfolio items container
+	> div {
+		display: table;
+		width: 100%;
+		margin-right: -50px;
+		@extend %_trans-on;
+	}
+
+	// Columns
+	.ish-p-col {
+		// JS Preloading
+		visibility: hidden;
+
+		float: left;
+		position: relative;
+		display: block;
+
+		// Aspect ratio - 4:3 ( http://www.mademyday.de/css-height-equals-width-with-pure-css.html )
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 75%;
+			zoom: 1.0;
+		}
+
+		// Content
+		a {
+			display: block;
+			// Aspect ratio
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			// Aspect ratio END
+			border-bottom: none;
+			overflow: hidden;
+
+			div {
+				width:100%;
+				height: 100%;
+			}
+
+			// Image layer
+			.ish-p-img {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 100%;
+				height: 100%;
+				@extend %_trans-on;
+			}
+
+				// Content layer
+			.ish-p-overlay {
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+
+				> span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				div {
+					width: 100%;
+					height: 100%;
+					display: table;
+					z-index: 999;
+					position: relative;
+
+					.ish-p-title {
+						display: table-cell;
+						vertical-align: middle;
+						font-weight: 500;
+						font-size: 16px;
+						text-align: center;
+
+						span {
+							display: block;
+						}
+
+						.ish-p-cat {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+
+		// Images used for the pop-up gallery
+		a.ish-popup-gal-images{
+			display: none;
+		}
+	}
+
+
+	// Hovers
+	$opacity: 0.9;
+	$scale: 1.2;
+	$rotate: 5deg;
+	$zoomin-titles-paddings: 50px;
+
+
+	// Hover effect - zoomin, zoomin-inverse ---------------------------------------------------------------------------
+	&.ish-p-zoomin, &.ish-p-zoomin-rotate, &.ish-p-zoomin-inverse, &.ish-p-zoomin-rotate-inverse, &.ish-p-zoommax {
+		a {
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		// Content layer
+		.ish-p-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			> span { @extend %_trans-on; }
+
+			div {
+				.ish-p-title {
+					span {
+						@extend %_trans-on;
+						display: block;
+					}
+
+					.ish-p-headline { padding-bottom: $zoomin-titles-paddings; }
+					.ish-p-cat { padding-top: $zoomin-titles-paddings; }
+				}
+			}
+		}
+
+		// Text left-right
+		&.ish-p-text-lr .ish-p-overlay div .ish-p-title {
+			span { padding: 0; width: 100%; }
+			.ish-p-headline { margin-left: $zoomin-titles-paddings; }
+			.ish-p-cat { margin-left: -$zoomin-titles-paddings; }
+		}
+	}
+
+	// Hover effect - zoomin -------------------------------------------------------------------------------------------
+	&.ish-p-zoomin, &.ish-p-zoomin-rotate {
+		.ish-p-overlay {
+			> span { opacity: 0; }
+
+			div .ish-p-title span { opacity: 0; }
+		}
+
+		a:hover {
+			.ish-p-overlay {
+				> span { opacity: $opacity; }
+
+				div {
+					.ish-p-title {
+						span {
+							margin: 0 !important;
+							padding: 0 !important;
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.ish-p-zoomin {
+		a:hover {
+			.ish-p-img {
+				-webkit-transform: scale($scale);
+				-moz-transform: scale($scale);
+				-o-transform: scale($scale);
+				transform: scale($scale);
+			}
+		}
+	}
+
+	&.ish-p-zoomin-rotate {
+		a:hover {
+			.ish-p-img {
+				-webkit-transform: scale($scale) rotate($rotate);
+				-moz-transform: scale($scale) rotate($rotate);
+				-o-transform: scale($scale) rotate($rotate);
+				transform: scale($scale) rotate($rotate);
+			}
+		}
+	}
+
+
+	// Hover effect - zoomin-inverse -----------------------------------------------------------------------------------
+	&.ish-p-zoomin-inverse, &.ish-p-zoomin-rotate-inverse {
+		.ish-p-overlay {
+			> span { opacity: $opacity; }
+			span { margin: 0 !important; width: 100%; padding: 0 !important; }
+		}
+		a:hover .ish-p-overlay {
+			> span { opacity: 0; }
+			span span { opacity: 0; }
+			.ish-p-headline { padding-bottom: $zoomin-titles-paddings !important; }
+			.ish-p-cat { padding-top: $zoomin-titles-paddings !important; }
+		}
+
+		// Text left-right
+		&.ish-p-text-lr a:hover .ish-p-overlay div .ish-p-title {
+			span { margin: 0 !important; padding: 0 !important }
+			.ish-p-headline { margin-left: $zoomin-titles-paddings !important; }
+			.ish-p-cat { margin-left: -$zoomin-titles-paddings !important; }
+		}
+	}
+
+	&.ish-p-zoomin-inverse {
+		.ish-p-img {
+			-webkit-transform: scale($scale);
+			-moz-transform: scale($scale);
+			-o-transform: scale($scale);
+			transform: scale($scale);
+		}
+
+		a:hover {
+			.ish-p-img {
+				-webkit-transform: scale(1);
+				-moz-transform: scale(1);
+				-o-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+	}
+
+	&.ish-p-zoomin-rotate-inverse {
+		.ish-p-img {
+			-webkit-transform: scale($scale) rotate($rotate);
+			-moz-transform: scale($scale) rotate($rotate);
+			-o-transform: scale($scale) rotate($rotate);
+			transform: scale($scale) rotate($rotate);
+		}
+
+		a:hover {
+			.ish-p-img {
+				$rotate: 0deg;
+				-webkit-transform: scale(1) rotate($rotate);
+				-moz-transform: scale(1) rotate($rotate);
+				-o-transform: scale(1) rotate($rotate);
+				transform: scale(1) rotate($rotate);
+			}
+		}
+	}
+
+
+	// Hover effect - 3d cube top --------------------------------------------------------------------------------------
+	&.ish-p-3dcube-top, &.ish-p-3dcube-bottom, &.ish-p-3dcube-left, &.ish-p-3dcube-right,
+	&.ish-p-3dcube-inverse-top, &.ish-p-3dcube-inverse-bottom, &.ish-p-3dcube-inverse-left, &.ish-p-3dcube-inverse-right {
+		a {
+			-webkit-perspective-origin: 50%;
+			perspective-origin: 50%;
+			overflow: visible;
+
+			.ish-p-item {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				@extend %_trans-on;
+
+				.ish-p-img, .ish-p-overlay {
+					position: absolute;
+
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+					-ms-backface-visibility: hidden;
+					backface-visibility: hidden;
+				}
+
+				.ish-p-overlay {
+					-webkit-transform-origin: bottom center;
+					-ms-transform-origin: bottom center;
+					transform-origin: bottom center;
+
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+					-ms-backface-visibility: hidden;
+					backface-visibility: hidden;
+				}
+			}
+
+			&:hover {
+				z-index: 89;
+			}
+		}
+	}
+
+
+	// Hover effect - flip ---------------------------------------------------------------------------------------------
+	&.ish-p-flip-left, &.ish-p-flip-right, &.ish-p-flip-top, &.ish-p-flip-bottom,
+	&.ish-p-flip-inverse-left, &.ish-p-flip-inverse-right, &.ish-p-flip-inverse-top, &.ish-p-flip-inverse-bottom {
+		//overflow: hidden;
+
+		a {
+			overflow: visible !important;
+			-webkit-perspective: 800px; perspective: 800px;
+
+			.ish-p-item {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				@extend %_trans-on;
+
+				.ish-p-img {
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+					-ms-backface-visibility: hidden;
+					backface-visibility: hidden;
+				}
+
+				.ish-p-overlay {
+					position: absolute;
+					top: 0;
+					left: 0;
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+					-ms-backface-visibility: hidden;
+					backface-visibility: hidden;
+				}
+			}
+
+			&:hover {
+				z-index: 98;
+			}
+		}
+	}
+
+	// Common efinitions
+	&.ish-p-flip-left, &.ish-p-flip-right,
+	&.ish-p-flip-inverse-left, &.ish-p-flip-inverse-right {
+		.ish-p-overlay {
+			-webkit-transform: rotateY( 180deg );
+			-ms-transform: rotateY( 180deg );
+			transform: rotateY( 180deg );
+		}
+	}
+
+	&.ish-p-flip-top, &.ish-p-flip-bottom,
+	&.ish-p-flip-inverse-top, &.ish-p-flip-inverse-bottom {
+		.ish-p-overlay {
+			-webkit-transform: rotateX( 180deg );
+			-ms-transform: rotateX( 180deg );
+			transform: rotateX( 180deg );
+		}
+	}
+
+	// Left / right
+	&.ish-p-flip-left a:hover .ish-p-item {
+		-webkit-transform: rotateY( -180deg );
+		-ms-transform: rotateY( -180deg );
+		transform: rotateY( -180deg );
+	}
+
+	&.ish-p-flip-right a:hover .ish-p-item {
+		-webkit-transform: rotateY( 180deg );
+		-ms-transform: rotateY( 180deg );
+		transform: rotateY( 180deg );
+	}
+
+	// Top / bottom
+	&.ish-p-flip-top a:hover .ish-p-item {
+		-webkit-transform: rotateX( 180deg );
+		-ms-transform: rotateX( 180deg );
+		transform: rotateX( 180deg );
+	}
+
+	&.ish-p-flip-bottom a:hover .ish-p-item {
+		-webkit-transform: rotateX( -180deg );
+		-ms-transform: rotateX( -180deg );
+		transform: rotateX( -180deg );
+	}
+
+	// Top / bottom inverse
+	&.ish-p-flip-inverse-top {
+		.ish-p-item {
+			-webkit-transform: rotateX( -180deg );
+			-ms-transform: rotateX( -180deg );
+			transform: rotateX( -180deg );
+		}
+
+		a:hover .ish-p-item {
+			-webkit-transform: rotateX( 0deg );
+			-ms-transform: rotateX( 0deg );
+			transform: rotateX( 0deg );
+		}
+	}
+
+	&.ish-p-flip-inverse-bottom {
+		.ish-p-item {
+			-webkit-transform: rotateX( 180deg );
+			-ms-transform: rotateX( 180deg );
+			transform: rotateX( 180deg );
+		}
+
+		a:hover .ish-p-item {
+			-webkit-transform: rotateX( 0deg );
+			-ms-transform: rotateX( 0deg );
+			transform: rotateX( 0deg );
+		}
+	}
+
+	// Left / right inverse
+	&.ish-p-flip-inverse-left {
+		.ish-p-item {
+			-webkit-transform: rotateY( 180deg );
+			-ms-transform: rotateY( 180deg );
+			transform: rotateY( 180deg );
+		}
+
+		a:hover .ish-p-item {
+			-webkit-transform: rotateY( 0deg );
+			-ms-transform: rotateY( 0deg );
+			transform: rotateY( 0deg );
+		}
+	}
+
+	&.ish-p-flip-inverse-right {
+		.ish-p-item {
+			-webkit-transform: rotateY( -180deg );
+			-ms-transform: rotateY( -180deg );
+			transform: rotateY( -180deg );
+		}
+
+		a:hover .ish-p-item {
+			-webkit-transform: rotateY( 0deg );
+			-ms-transform: rotateY( 0deg );
+			transform: rotateY( 0deg );
+		}
+	}
+
+
+	// Perspective for flip & 3dcube
+	$perspective: ( 3000px, 2000px, 1700px, 1200px, 1000px, 850px, 700px );
+
+	// Perspective - classic / masonry - doubled
+	@for $p from 1 through 2 {
+
+		// Columns count
+		@for $c from 2 through 8 {
+			&[data-count="#{$c}"] {
+				&[class*=" ish-p-3dcube-"], &[class*=" ish-p-flip-"] {
+
+					// Masonry
+					@if $p == 2 {
+						.ish-p-col-w2, .ish-p-col-h2 {
+							a {
+								-webkit-perspective: nth($perspective, $c - 1) * 2;
+								perspective: nth($perspective, $c - 1) * 2;
+							}
+						}
+					}
+
+					// Classic
+					@else {
+						.ish-p-col a {
+							-webkit-perspective: nth($perspective, $c - 1);
+							perspective: nth($perspective, $c - 1);
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	// Columns - classic grid ------------------------------------------------------------------------------------------
+	$width: 100%;
+	$colFrom: 2;
+	$colTo: 8;
+	$pflo_ffie_fix: 0.00001;
+
+	@for $i from $colFrom through $colTo {
+		&[data-count="#{$i}"] .ish-p-col { width: ( $width / $i ) - $pflo_ffie_fix; }
+	}
+
+
+	// Columns - packery / masonry layout ------------------------------------------------------------------------------
+	&.ish-p-packery {
+		.ish-p-col {
+			&.ish-p-col-h1:before { padding-top: 100% !important; }
+			&.ish-p-col-h2:before { padding-top: 200% !important; }
+			&.ish-p-col-w2.ish-p-col-h1:before { padding-top: 50% !important; }
+			&.ish-p-col-w2.ish-p-col-h2:before { padding-top: 100% !important; }
+		}
+
+		$width: 100%;
+
+		@for $i from $colFrom through $colTo {
+			&[data-count="#{$i}"] .ish-p-col {
+				&.ish-p-col-w1 { width: $width / $i; }
+				&.ish-p-col-w2 { width: ( $width / $i ) * 2; }
+			}
+		}
+	}
+
+
+	// Columns - responsive part in dynamic_responsive.css
+
+	// Portfolio pagination
+	.ish-pagination {
+		margin-top: 25px;
+	}
+}
+
+// Portfolio Prev Next shortcode -----------------------------------------------------------------------------------
+.ish-sc_portfolio_prev_next {
+	.ish-sc-element{
+		margin-bottom: 0 !important;
+	}
+
+	> div {
+		margin-bottom: 8px;
+		display: inline-block;
+
+		&:first-child {
+			margin-right: 5px;
+		}
+	}
+
+	&.ish-center {
+		text-align: center;
+	}
+
+	&.ish-right {
+		text-align: right;
+	}
+}
+
+.wpb_column.ish-right .ish-sc_portfolio_prev_next a {
+	margin-left: 0 !important;
+}
+
+// Portfolio categories ------------------------------------------------------------------------------------------------
+.ish-sc_portfolio_categories {
+	&.ish-left {
+
+	}
+
+	&.ish-center {
+		text-align: center;
+	}
+
+	&.ish-right {
+		text-align: right;
+	}
+}
+
+// Portfolio gallery ---------------------------------------------------------------------------------------------------
+.ish-sc_portfolio_gallery {
+	div {
+		a img {
+			margin-top: 25px;
+			display: table;
+		}
+
+		&:first-child {
+			a img {
+				margin-top: 0
+			}
+		}
+	}
+}
+
+// Full width categories
+.ish-row-full .ish-section-filter {
+	padding-top: 50px !important;
+}
+
+// Full width categories
+.ish-row-full .ish-preloader {
+	margin-top: 50px !important;
+}

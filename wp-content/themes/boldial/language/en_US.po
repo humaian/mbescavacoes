@@ -1,0 +1,2153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Boldial WP\n"
+"POT-Creation-Date: 2015-06-26 12:37+0100\n"
+"PO-Revision-Date: 2015-06-26 12:37+0100\n"
+"Last-Translator: IshYoBoy.com <hello@ishyoboy.com>\n"
+"Language-Team: IshYoBoy.com <hello@ishyoboy.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-KeywordsList: _;__;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../wpbakery\n"
+"X-Poedit-SearchPathExcluded-1: ../_gsdata_\n"
+
+#: ../admin/classes/class.options_machine.php:240
+msgid "Background"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:243
+msgid "Text"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:246
+msgid "Active Background"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:249
+msgid "Active Text"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:252
+msgid "Border"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:255
+msgid "Headline 1"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:258
+msgid "Headline 2"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:261
+msgid "Link"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:264
+msgid "Link 1"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:267
+msgid "Link 2"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:270
+msgid "Active Link"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:273
+msgid "Block Elements BG"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:276
+msgid "Block Elements Text"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:279
+#: ../admin/functions/functions.options.php:688
+#: ../admin/functions/functions.options.php:697
+msgid "Color"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:550
+msgid ""
+"To be able to use the Twitter Widget you need to create an application under "
+"your\n"
+"                    twitter account which will allow your widget to "
+"communicate with twitter servers and receive your latest posts. Please "
+"follow each of the steps below:"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:553
+msgid "Add a new Twitter application by visiting:"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:554
+msgid "Log in with your twitter account"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:555
+msgid ""
+"Click on the \"Create a new application\" button or use an already existing "
+"one."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:556
+msgid ""
+"Fill in all fields and Callback URL (Website and URLs should start with "
+"\"http://\")."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:557
+msgid "Agree to the rules, fill out the captcha, and submit your application."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:558
+msgid ""
+"After successful creation, create an access token by clicking the \"Create "
+"my access token.\" button"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:559
+msgid ""
+"Wait for a few seconds for the server to reflect the changes and refresh the "
+"page."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:560
+msgid ""
+"Copy all the keys into the fields below. Make sure not to copy the URLs but "
+"the random strings."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:561
+msgid ""
+"Save all changes. You can now create your Twitter Widget in \"Appearance -> "
+"Widgets\"."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:696
+msgid "Last Backup : "
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:835
+msgid "New version available!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:835
+msgid ""
+"Please download again the theme from the site you have purchased it from and "
+"follow the update instructions in the documentation."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:842
+msgid "You have the latest theme version! Well done!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:848
+msgid "Changelog:"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:861
+msgid "View older versions"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:888
+msgid ""
+"Import the demo content as seen on the live page, containing all Pages, "
+"Posts, Widgets, Menus, etc.. Starting the import process more than once is "
+"not recommended. You should use the standard WordPress Importer instead."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:889
+msgid "Before the import"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:890
+msgid ""
+"Make sure all necessary plugins are installed and active otherwise their "
+"data will not be imported!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:893
+#: ../admin/classes/class.options_machine.php:906
+#: ../admin/classes/class.options_machine.php:918
+msgid "Active"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:893
+#: ../admin/classes/class.options_machine.php:906
+#: ../admin/classes/class.options_machine.php:918
+msgid "Inactive"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:895
+msgid " imports Protfolio"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:898
+#: ../admin/classes/class.options_machine.php:910
+#: ../admin/classes/class.options_machine.php:922
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1288
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1409
+msgid "Install"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:900
+#: ../admin/classes/class.options_machine.php:912
+#: ../admin/classes/class.options_machine.php:924
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1312
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1410
+msgid "Activate"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:907
+msgid "Contact Form 7"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:907
+msgid " imports Contact Forms"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:919
+msgid "WooCommerce (optional)"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:919
+msgid " imports Products"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:932
+msgid "Import started..."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:934
+msgid ""
+"The import might take up to few minutes. Please, be patient and do not "
+"reload the page. You will be notified once the import has finished."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:937
+msgid "Import Error!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:938
+msgid "An error occurred during the import process."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:942
+msgid "All Done. Have Fun!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:943
+#: ../assets/framework/wp/importer/wordpress-importer.php:179
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:998
+msgid "Upload"
+msgstr ""
+
+#: ../admin/front-end/options.php:57 ../admin/front-end/options.php:81
+#, fuzzy
+msgid "Save All Changes"
+msgstr "DEM ALL"
+
+#: ../admin/front-end/options.php:82
+msgid "Reset Options"
+msgstr ""
+
+#: ../admin/functions/functions.interface.php:38
+#: ../admin/functions/functions.interface.php:45 ../admin/index.php:104
+msgid "Theme Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:38
+msgid "Select a page"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:51
+msgid "Select a menu"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:87
+msgid "Select a font"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:182
+msgid "General Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:188
+msgid "Boxed / Unboxed Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:189
+msgid ""
+"Default layout of the theme. Either boxed with a background image or unboxed "
+"(full-width)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:199
+msgid "Page Width"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:200
+msgid "Choose one of the pre-defined widths or enter custom one."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:203
+#: ../admin/functions/functions.options.php:891
+#: ../admin/functions/functions.options.php:928
+#: ../admin/functions/functions.options.php:965
+#: ../admin/functions/functions.options.php:1003
+#: ../admin/functions/functions.options.php:1040
+msgid "Predefined"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:204
+#: ../admin/functions/functions.options.php:892
+#: ../admin/functions/functions.options.php:929
+#: ../admin/functions/functions.options.php:966
+#: ../admin/functions/functions.options.php:1004
+#: ../admin/functions/functions.options.php:1041
+msgid "Custom"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:215
+msgid "Wide Screen"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:216
+msgid "NoteBook"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:227
+msgid "Responsive layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:228
+msgid ""
+"Make the page width fit the screen of every device or set it to never resize."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:231
+msgid "Responsive"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:232
+msgid "Fixed"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:237
+msgid "px - from this point the layout will change to a mobile version."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:244
+msgid "SmoothScroll"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:245
+msgid ""
+"Enable smoothscroll functionality for smoother page scrolling effect (Google "
+"Chrome only)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:251
+msgid "Breadcrumbs Bar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:252
+msgid "Display a breadcrumbs navigation in the content of each page."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:257
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:248
+msgid "None"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:258
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:249
+msgid "Breadcrumbs only"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:259
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:250
+msgid "Social Icons only"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:260
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:251
+msgid "Breadcrumbs & Social Icons"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:265
+msgid "404 Error page"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:266
+msgid ""
+"Select a page to be displayed instead of the standard 404 Not Found page."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:273
+msgid "The page which will be displayed instead of the standard 404 page."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:281
+msgid "Social icons"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:282
+msgid "Social icons: Paste the social icons using the [social] shortcode"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:313
+msgid "Tracking Code"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:314
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:320
+msgid "Social Sharing Code"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:321
+msgid ""
+"Paste your addthis sharing code from https://www.addthis.com/get/sharing"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:327
+msgid "Custom CSS"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:328
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:341
+msgid "Custom Favicons"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:342
+msgid ""
+"Upload a regular 16px x 16px png/gif/ico image that will represent your "
+"website's favicon."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:348
+msgid "For iPad 1, 2 - 72px x 72px png image"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:354
+msgid "For iPhone Retina - 114px x 114px png image"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:360
+msgid "For iPad 3 Retina - 144px x 144px png image"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:371
+msgid "Header Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:376
+msgid "Site Logo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:377
+msgid ""
+"Use image logo instead of a simple Site Title and if not empty, Tagline."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:383
+#: ../admin/functions/functions.options.php:391
+msgid " "
+msgstr ""
+
+#: ../admin/functions/functions.options.php:384
+msgid "Select an image for the Site Logo."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:392
+msgid "Retina devices logo alternative - 2 times bigger than the normal logo."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:392
+msgid "<strong>IMPORTANT:</strong><br>The Site Logo must be set."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:400
+msgid "Header Height"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:401
+msgid "px - the height of the header area."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:407
+msgid "Header navigation responsive layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:408
+msgid ""
+"px - from this point the main navigation will change to a mobile version. "
+"Works only if 'General Options -> Responsive layout' is set to 'Responsive'"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:414
+msgid "Header navigation search form"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:415
+msgid "Add search form as last navigation item."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:421
+msgid "Sticky Navigation"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:422
+msgid ""
+"Choose whether the navigation remains sticked to the top of the page while "
+"scrolling down."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:429
+msgid "Display Sticky Nav on tablets and mobile devices"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:436
+msgid "Sticky Navigation Height in pixels. E.g.: \"50\"."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:449
+msgid "Main Navigation Position"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:450
+msgid ""
+"Choose whether to display the Main Navigation on the top, left or right side "
+"of the page."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:460
+msgid "Main Navigation Type"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:461
+msgid "Choose how the navigation should highlight the active pages/sections."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:471
+msgid "Expandable area"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:472
+msgid "Enable to display overlay expandable area."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:479
+msgid ""
+"Select which sidebar will be displayed inside the expandable area by default."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:487
+msgid "Language Selector"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:488
+msgid "Display the language selector"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:502
+msgid "Footer Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:507
+msgid "Footer widget area"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:508
+msgid "Show the footer widget area."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:515
+msgid ""
+"Select which sidebar will be displayed inside the footer widget area by "
+"default."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:523
+msgid "Footer legals area"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:524
+msgid "Show content in the footer legals area."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:539
+msgid "Blog Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:544
+msgid "Blog Overview Style"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:545
+msgid "Choose how the blog overview page will look like."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:555
+msgid "Masonry Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:556
+msgid "Masonry Layout Style - Regular Grid or Proportional Tiles."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:567
+msgid "Number of columns to display in the Masonry Blog Grid."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:582
+msgid ""
+"Masonry Row Style - Keep the Masonry Grid within content or expand to full "
+"width."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:593
+msgid "Display Categories Bar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:594
+msgid "Display a bar with all Blog categories on overview pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:600
+#: ../assets/functions/widgets.php:13
+msgid "Blog Sidebar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:601
+msgid "Display Sidebar on Blog overview and Blog detail pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:608
+msgid ""
+"Choose whether to display the sidebar on the left or on the right side of "
+"the page."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:619
+msgid ""
+"Select which sidebar will be displayed on Blog overview and Blog detail "
+"pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:627
+msgid "Blog Social Sharing"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:628
+msgid "Chose whether to display a social sharing buttons box by default."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:661
+msgid "Color Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:666
+msgid "Global Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:667
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:179
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:220
+msgid "Text color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:674
+msgid "Body content color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:680
+msgid "Background color (when no pattern or image)"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:687
+msgid "Base colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:696
+msgid "Additional Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:704
+msgid "Header Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:715
+msgid "Header Background opacity in %."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:715
+msgid ""
+"<strong>IMPORTANT:</strong><br>For pattern or background image set \"0\"."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:715
+msgid "For solid background color - \"100\"."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:724
+msgid "Main Navigation Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:736
+msgid "Main Navigation Submenu Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:747
+msgid "Tagline Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:758
+msgid "Breadcrumbs Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:770
+msgid "Sidebar Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:790
+msgid "Footer Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:811
+msgid "Footer Legals Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:822
+msgid "Side Navigation Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:833
+msgid "Responsive Navigation Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:844
+msgid "Search Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:855
+msgid "Expandable Area Colors"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:882
+msgid "Pattern Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:887
+msgid "Background Pattern (Boxed layout only)"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:897
+#: ../admin/functions/functions.options.php:934
+#: ../admin/functions/functions.options.php:971
+#: ../admin/functions/functions.options.php:1009
+#: ../admin/functions/functions.options.php:1046
+msgid "Choose one of the pre-defined patterns."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:905
+#: ../admin/functions/functions.options.php:942
+#: ../admin/functions/functions.options.php:980
+#: ../admin/functions/functions.options.php:1017
+#: ../admin/functions/functions.options.php:1054
+msgid "Upload and select custom pattern."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:913
+#: ../admin/functions/functions.options.php:950
+#: ../admin/functions/functions.options.php:988
+#: ../admin/functions/functions.options.php:1025
+#: ../admin/functions/functions.options.php:1062
+msgid "Background position"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:919
+#: ../admin/functions/functions.options.php:956
+#: ../admin/functions/functions.options.php:994
+#: ../admin/functions/functions.options.php:1031
+#: ../admin/functions/functions.options.php:1068
+msgid "Repeat and scroll"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:920
+msgid "Fixed and cover"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:924
+msgid "Header pattern"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:934
+#: ../admin/functions/functions.options.php:942
+msgid ""
+"<strong>IMPORTANT:</strong><br>The Header background color opacity must not "
+"be set to \"100\". See \"Color Options\" section."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:957
+#: ../admin/functions/functions.options.php:995
+#: ../admin/functions/functions.options.php:1032
+#: ../admin/functions/functions.options.php:1069
+msgid "Cover"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:961
+msgid "Expandable area pattern"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:999
+msgid "Tagline pattern"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1036
+msgid "Footer Widget area pattern"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1078
+msgid "Font Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1085
+msgid "Body Font 1"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1086
+#: ../admin/functions/functions.options.php:1155
+#: ../admin/functions/functions.options.php:1189
+#: ../admin/functions/functions.options.php:1257
+#: ../admin/functions/functions.options.php:1326
+#: ../admin/functions/functions.options.php:1395
+#: ../admin/functions/functions.options.php:1464
+#: ../admin/functions/functions.options.php:1533
+#: ../admin/functions/functions.options.php:1602
+msgid "Font Type"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1096
+#: ../admin/functions/functions.options.php:1117
+#: ../admin/functions/functions.options.php:1165
+#: ../admin/functions/functions.options.php:1178
+#: ../admin/functions/functions.options.php:1198
+#: ../admin/functions/functions.options.php:1219
+#: ../admin/functions/functions.options.php:1267
+#: ../admin/functions/functions.options.php:1288
+#: ../admin/functions/functions.options.php:1336
+#: ../admin/functions/functions.options.php:1357
+#: ../admin/functions/functions.options.php:1405
+#: ../admin/functions/functions.options.php:1426
+#: ../admin/functions/functions.options.php:1474
+#: ../admin/functions/functions.options.php:1495
+#: ../admin/functions/functions.options.php:1543
+#: ../admin/functions/functions.options.php:1564
+#: ../admin/functions/functions.options.php:1612
+#: ../admin/functions/functions.options.php:1633
+msgid "Font Family"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1102
+#: ../admin/functions/functions.options.php:1171
+msgid "0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1108
+#: ../admin/functions/functions.options.php:1125
+#: ../admin/functions/functions.options.php:1210
+#: ../admin/functions/functions.options.php:1227
+#: ../admin/functions/functions.options.php:1279
+#: ../admin/functions/functions.options.php:1296
+#: ../admin/functions/functions.options.php:1348
+#: ../admin/functions/functions.options.php:1365
+#: ../admin/functions/functions.options.php:1417
+#: ../admin/functions/functions.options.php:1434
+#: ../admin/functions/functions.options.php:1486
+#: ../admin/functions/functions.options.php:1503
+#: ../admin/functions/functions.options.php:1555
+#: ../admin/functions/functions.options.php:1572
+#: ../admin/functions/functions.options.php:1624
+#: ../admin/functions/functions.options.php:1641
+msgid "Font Variant"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1134
+#: ../admin/functions/functions.options.php:1236
+#: ../admin/functions/functions.options.php:1305
+#: ../admin/functions/functions.options.php:1374
+#: ../admin/functions/functions.options.php:1443
+#: ../admin/functions/functions.options.php:1512
+#: ../admin/functions/functions.options.php:1581
+#: ../admin/functions/functions.options.php:1650
+msgid "Font Size"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1143
+#: ../admin/functions/functions.options.php:1245
+#: ../admin/functions/functions.options.php:1314
+#: ../admin/functions/functions.options.php:1383
+#: ../admin/functions/functions.options.php:1452
+#: ../admin/functions/functions.options.php:1521
+#: ../admin/functions/functions.options.php:1590
+#: ../admin/functions/functions.options.php:1659
+msgid "Line Height"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1154
+msgid "Body Font 2"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1188
+msgid "Header Font"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1204
+#: ../admin/functions/functions.options.php:1273
+#: ../admin/functions/functions.options.php:1342
+#: ../admin/functions/functions.options.php:1411
+#: ../admin/functions/functions.options.php:1480
+#: ../admin/functions/functions.options.php:1549
+#: ../admin/functions/functions.options.php:1618
+msgid "Google font preview!"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1256
+msgid "H1"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1325
+msgid "H2"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1394
+msgid "H3"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1463
+msgid "H4"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1532
+msgid "H5"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1601
+msgid "H6"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1674
+msgid "Woocommerce"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1679
+msgid "Woocommerce Sidebar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1680
+msgid ""
+"Display the sidebar on each woocommerce page by default. This settings can "
+"be overridden in each page's settings."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1687
+msgid ""
+"Choose whether to display the sidebar on the left or on the right side of "
+"woocommerce pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1695
+msgid ""
+"Select which sidebar will be displayed on each woocommerce page by default."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1703
+msgid "Products per page"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1704
+msgid ""
+"Number of products displayed per page. To see all items set the value to "
+"\"-1\""
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1718
+msgid "Plugins Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1737
+msgid "Backup Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1742
+msgid "Backup and Restore Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1750
+msgid "Transfer Theme Options Data"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1764
+#: ../admin/functions/functions.options.php:1770
+msgid "Theme Update"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1782
+#: ../admin/functions/functions.options.php:1787
+msgid "Demo Data Import"
+msgstr ""
+
+#: ../archive.php:15 ../assets/framework/wp/options/custom-functions.php:118
+#: ../taxonomy-portfolio-category.php:8
+msgid "Category: "
+msgstr ""
+
+#: ../archive.php:23 ../assets/framework/wp/options/custom-functions.php:116
+#: ../assets/framework/wp/options/custom-functions.php:714
+msgid "Tag: "
+msgstr ""
+
+#: ../archive.php:31 ../assets/framework/wp/options/custom-functions.php:577
+#: ../index.php:31
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:33 ../assets/framework/wp/options/custom-functions.php:579
+#: ../index.php:33
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:33 ../assets/framework/wp/options/custom-functions.php:579
+#: ../index.php:33
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:35 ../assets/framework/wp/options/custom-functions.php:581
+#: ../index.php:35
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:35 ../assets/framework/wp/options/custom-functions.php:581
+#: ../index.php:35
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:37 ../assets/framework/wp/options/custom-functions.php:583
+#: ../index.php:37
+msgid "Archives"
+msgstr ""
+
+#: ../archive.php:116 ../archive.php:182 ../home.php:89 ../home.php:151
+msgid "Sorry, there is nothing to be displayed in here."
+msgstr ""
+
+#: ../assets/framework/wp/importer/parsers.php:43
+#: ../assets/framework/wp/importer/parsers.php:75
+#: ../assets/framework/wp/importer/parsers.php:83
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: ../assets/framework/wp/importer/parsers.php:44
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: ../assets/framework/wp/importer/parsers.php:87
+#: ../assets/framework/wp/importer/parsers.php:92
+#: ../assets/framework/wp/importer/parsers.php:284
+#: ../assets/framework/wp/importer/parsers.php:475
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:134
+#: ../assets/framework/wp/importer/wordpress-importer.php:143
+#: ../assets/framework/wp/importer/wordpress-importer.php:194
+#: ../assets/framework/wp/importer/wordpress-importer.php:198
+#: ../assets/framework/wp/importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:135
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:178
+#, fuzzy
+msgid "All done."
+msgstr "DEM ALL"
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:178
+msgid "Have fun!"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:199
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:215
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:240
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:267
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:269
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:279
+msgid "Import Attachments"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:282
+msgid "Download and import file attachments"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:299
+msgid "Import author:"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:310
+msgid "or create new user with login name:"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:313
+msgid "as a new user:"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:321
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:323
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:324
+msgid "- Select -"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:374
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:425
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:465
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:511
+#: ../assets/framework/wp/importer/wordpress-importer.php:652
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:537
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:559
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:618
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:783
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:790
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:853
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:866
+msgid "Invalid file type"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:910
+msgid "Remote server did not respond"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:916
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:923
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:928
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:934
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:1033
+msgid "Import WordPress"
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:1040
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:1055
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: ../assets/framework/wp/importer/wordpress-importer.php:1056
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:161
+#: ../functions.php:1279
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:162
+#: ../functions.php:1280
+msgid "Install Plugins"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:163
+#: ../functions.php:1281
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:175
+#: ../functions.php:1293
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:177
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1956
+#: ../functions.php:1294
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:532
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2173
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1167
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1348
+msgid "Private Repository"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1170
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1351
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1175
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1178
+msgid "Required"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1178
+msgid "Recommended"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1181
+msgid "Not Installed"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1183
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1372
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1388
+msgid "Plugin"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1389
+msgid "Source"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1390
+msgid "Type"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1391
+msgid "Status"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1939
+msgid "Install package not available."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1940
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1941
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1942
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1943
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1944
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:1955
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2069
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2070
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2079
+msgid "Show Details"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2070
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2079
+msgid "Hide Details"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2071
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2072
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2076
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2077
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2078
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2079
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2080
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../assets/framework/wp/includes/class-tgm-plugin-activation.php:2081
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../assets/framework/wp/includes/ish_like_it.php:87
+msgid "Like"
+msgstr ""
+
+#: ../assets/framework/wp/options/custom-functions.php:12
+msgid "Older Article &gt;"
+msgstr ""
+
+#: ../assets/framework/wp/options/custom-functions.php:13
+msgid "&lt; Newer Article"
+msgstr ""
+
+#: ../assets/framework/wp/options/custom-functions.php:546
+#: ../assets/framework/wp/options/custom-functions.php:555
+#: ../assets/framework/wp/options/custom-functions.php:562
+#: ../assets/framework/wp/options/custom-functions.php:659
+msgid "Home"
+msgstr ""
+
+#: ../assets/framework/wp/options/custom-functions.php:611
+#: ../assets/framework/wp/options/custom-functions.php:679
+#: ../functions.php:1500
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../assets/framework/wp/options/custom-functions.php:715
+msgid "404 - Page not Found"
+msgstr ""
+
+#: ../assets/framework/wp/options/custom-functions.php:716
+msgid "Search"
+msgstr ""
+
+#: ../assets/framework/wp/pagebuilder/ish_config/admin_notices.php:17
+msgid "Incompatible Visual Composer version detected!"
+msgstr ""
+
+#: ../assets/framework/wp/pagebuilder/ish_config/admin_notices.php:18
+#, php-format
+msgid ""
+"%1$s theme may not work properly with your current Visual Composer version "
+"(v.%2$s). Please, either deactivate the Visual Composer Plugin or replace it "
+"with version %3$s."
+msgstr ""
+
+#: ../assets/framework/wp/pagebuilder/ish_config/admin_notices.php:38
+#, php-format
+msgid ""
+"You have a newer Visual Composer than the one %1$s is 100%% compatible with. "
+"If you face any issues either deactivate Visual Composer Plugin or replace "
+"it with version %3$s."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:8
+msgid "Link settings"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:14
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:47
+msgid "URL"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:16
+msgid "Add an URL link."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:20
+msgid "Link Text"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:22
+msgid "Add text for the URL link."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:29
+msgid "Quote settings"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:35
+msgid "Quote"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:37
+msgid "Add a quote"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:41
+msgid "Quote Source"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:43
+msgid "Add the quote source"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:49
+msgid "Add the quote source URL"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:56
+msgid "Audio settings"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:62
+msgid "Adio file URL"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:65
+msgid "Please enter the URL of the audio file."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:72
+msgid "Video settings"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:78
+msgid "Embedded or Selfhosted video"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:81
+msgid "Use embedded video."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:85
+msgid "URL or Embedded Code"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:87
+msgid ""
+"Enter the URL or embed code of Vimeo.com or YouTube.com streaming services."
+"<br>To get the code, go to the external video page, click \"share\" button "
+"and copy the Embed code."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:91
+msgid "MP4 file URL"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:94
+msgid "Please enter the URL of the .mp4 video file."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:98
+msgid "WebM file URL"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:101
+msgid "Please enter the URL of the .webm video file."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:105
+msgid "Poster image"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:108
+msgid "Please enter the URL of the poster image file."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:121
+msgid "Custom Taglines"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:127
+msgid "Show Custom Taglines"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:130
+msgid "If checked, custom taglines will be used instead of the page headline."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:134
+msgid "Main Tagline"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:141
+msgid "Sub Tagline"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:148
+msgid "Use Image as background"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:151
+msgid "Use the featured image as a background for the Taglines area."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:155
+msgid "Use Custom Colors"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:158
+msgid "Use the colors from \"Color Settings\" box in the Taglines area."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:166
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:207
+msgid "Color Settings"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:172
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:213
+msgid "Background color"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:175
+msgid "Used in Taglines, Full-width and Grid Blog overview pages."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:182
+msgid "Used in Taglines, Full-width and Masonry Blog overview pages."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:186
+msgid "Masonry size"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:189
+msgid "Used for Masonry Grid Blog overview pages."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:192
+msgid "1 x 1"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:193
+msgid "1 x 2"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:194
+msgid "2 x 1"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:195
+msgid "2 x 2"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:216
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:223
+msgid "Used in Taglines area."
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:235
+msgid "Page Settings"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:241
+msgid "Show breadcrumbs:"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:244
+msgid "To show/hide the breadcrumbs on all pages go to "
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:247
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:261
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:326
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:362
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:445
+#: ../assets/framework/wp/posts/ishyo_meta_fields/menu_select.php:2
+msgid "Default setting"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:255
+msgid "Page Boxed / Unboxed layout:"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:258
+msgid "To change the layout of the whole website go to "
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:262
+msgid "Boxed"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:263
+msgid "Unboxed"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:314
+msgid "Main Navigation"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:320
+msgid "Navigation Position"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:327
+msgid "Center"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:328
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:364
+msgid "Left"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:329
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:365
+msgid "Right"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:333
+msgid "Navigation Menu"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:350
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:369
+msgid "Sidebar"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:356
+msgid "Sidebar position"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:363
+msgid "No Sidebar"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:433
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:439
+msgid "Footer widget area:"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:446
+msgid "Disable"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:447
+msgid "Enable"
+msgstr ""
+
+#: ../assets/framework/wp/posts/custom-meta-boxes.php:451
+msgid "Use footer sidebar:"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/color_selector.php:6
+msgid "No Color"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:17
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:95
+msgid "Delete image"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:17
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:95
+msgid "Delete"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:25
+msgid "Add images"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:26
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:29
+msgid ""
+"Use <strong>Portfolio Gallery</strong> shortcode in content to display the "
+"gallery."
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:28
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:180
+msgid "Create Gallery"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:73
+msgid "Add Portfolio images"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:75
+msgid "Add to gallery"
+msgstr ""
+
+#: ../assets/framework/wp/posts/ishyo_meta_fields/images2.php:181
+msgid ""
+"After setting the gallery images up, use <strong>[portfolio_gallery]</"
+"strong> in content to display them."
+msgstr ""
+
+#: ../assets/functions/blog.php:23
+msgid "Categories"
+msgstr ""
+
+#: ../assets/functions/blog.php:39
+#, fuzzy
+msgid "All"
+msgstr "DEM ALL"
+
+#: ../assets/functions/nav.php:15
+msgid "Main menu"
+msgstr ""
+
+#: ../assets/functions/nav.php:136 ../assets/functions/nav.php:157
+msgid "Language"
+msgstr ""
+
+#: ../assets/functions/nav.php:265 ../assets/functions/nav.php:268
+msgid "No menu set under \"Appearance -> Menus\""
+msgstr ""
+
+#: ../assets/functions/theme-plugin-functions.php:380
+msgid "by"
+msgstr ""
+
+#: ../assets/functions/theme-plugin-functions.php:383
+msgid "in category"
+msgstr ""
+
+#: ../assets/functions/theme-plugin-functions.php:386
+msgid "tagged as"
+msgstr ""
+
+#: ../assets/functions/theme-plugin-functions.php:389
+msgid "with"
+msgstr ""
+
+#: ../assets/functions/theme-plugin-functions.php:390
+msgid "and"
+msgstr ""
+
+#: ../assets/functions/widgets.php:15
+msgid "This is the widgetized blog sidebar."
+msgstr ""
+
+#: ../assets/functions/widgets.php:24
+msgid "Portfolio Sidebar"
+msgstr ""
+
+#: ../assets/functions/widgets.php:26
+msgid "This is the widgetized Portfolio sidebar."
+msgstr ""
+
+#: ../assets/functions/widgets.php:35
+msgid "Expandable"
+msgstr ""
+
+#: ../assets/functions/widgets.php:37
+msgid "This is the widgetized expandable area"
+msgstr ""
+
+#: ../assets/functions/widgets.php:45
+msgid "Footer"
+msgstr ""
+
+#: ../assets/functions/widgets.php:47
+msgid "This is the widgetized footer."
+msgstr ""
+
+#: ../assets/functions/widgets.php:66
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: ../assets/functions/widgets.php:68
+msgid ""
+"This is the widgetized sidebar for Woocommerce pages if set in theme options."
+msgstr ""
+
+#: ../comments.php:22
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:30
+msgid "No comments yet"
+msgstr ""
+
+#: ../comments.php:30
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:30
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:46
+msgid "&lt; Previous Page"
+msgstr ""
+
+#: ../comments.php:47
+msgid "Next page &gt;"
+msgstr ""
+
+#: ../comments.php:62
+msgid "&lt; Previous"
+msgstr ""
+
+#: ../comments.php:63
+msgid "Next &gt;"
+msgstr ""
+
+#: ../comments.php:79
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:104
+msgid "Your name"
+msgstr ""
+
+#: ../comments.php:105
+msgid "Your email"
+msgstr ""
+
+#: ../comments.php:106
+msgid "Your web page"
+msgstr ""
+
+#: ../comments.php:110
+msgid "Your comment"
+msgstr ""
+
+#: ../comments.php:120
+msgid "Add comment"
+msgstr ""
+
+#: ../comments.php:121
+msgid "Add a reply"
+msgstr ""
+
+#: ../comments.php:122
+msgid "Cancel a reply"
+msgstr ""
+
+#: ../comments.php:123
+msgid "Send"
+msgstr ""
+
+#: ../content-post-audio.php:29 ../content-post-audio.php:89
+#: ../content-post-image.php:41 ../content-post-image.php:109
+#: ../content-post-link.php:25 ../content-post-link.php:75
+#: ../content-post-quote.php:53 ../content-post-quote.php:164
+#: ../content-post-standard.php:27 ../content-post-standard.php:86
+#: ../content-post-video.php:40 ../content-post-video.php:101
+msgid "Read more"
+msgstr ""
+
+#: ../functions.php:432
+msgid "Author"
+msgstr ""
+
+#: ../functions.php:446
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions.php:450
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:493
+msgid "Name"
+msgstr ""
+
+#: ../functions.php:495
+msgid "Email"
+msgstr ""
+
+#: ../functions.php:497
+msgid "Website"
+msgstr ""
+
+#: ../functions.php:501
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: ../functions.php:504
+msgid "Comment"
+msgstr ""
+
+#: ../functions.php:505
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../functions.php:506
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: ../functions.php:507
+msgid "Your email address will not be published."
+msgstr ""
+
+#: ../functions.php:508
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: ../functions.php:513
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../functions.php:514
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../functions.php:515
+msgid "Cancel reply"
+msgstr ""
+
+#: ../functions.php:516
+msgid "Post Comment"
+msgstr ""
+
+#: ../functions.php:1282
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:1295
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../functions.php:1439
+msgid "404 error - page not found"
+msgstr ""
+
+#: ../functions.php:1532
+#, php-format
+msgid "View %s page"
+msgstr ""
+
+#: ../header.php:55
+msgid "Close Side Navigation (ESC)"
+msgstr ""
+
+#: ../header.php:84
+msgid "Close Expandable (ESC)"
+msgstr ""
+
+#: ../index.php:92 ../index.php:146 ../single-post.php:75
+#: ../single-post.php:133
+msgid "Error 404 - Page Not Found"
+msgstr ""
+
+#: ../index.php:95 ../index.php:149 ../search.php:106 ../single-post.php:78
+#: ../single-post.php:136
+msgid "Sorry, the content you are looking for could not be found."
+msgstr ""
+
+#: ../page.php:28 ../page.php:49 ../single-portfolio-post.php:26
+#: ../single-portfolio-post.php:45
+msgid "Sorry, no pages matched your criteria."
+msgstr ""
+
+#: ../search.php:7
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../search.php:71
+msgid "No title"
+msgstr ""
+
+#: ../search.php:104
+msgid "No results found."
+msgstr ""
+
+#: ../searchform-header.php:3
+msgid "Search ..."
+msgstr ""
+
+#: ../searchform-header.php:7
+msgid "Close Search (ESC)"
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:4
+msgid "Search..."
+msgstr ""

@@ -1,0 +1,13 @@
+/*
+
+Theme Name: Boldial Child
+Theme URI: http://themes.ishyoboy.com/boldial/
+Author: ishYoBoy
+Author URI: http://ishyoboy.com
+Description: Btc--1CZ4nTozpgfgqufWhiXDtBu9pVurd41SPz--Boldial Child serves as a child theme to Boldial theme. Use it if you wish to make customizations to the original theme without having them overwritten with future updates.
+Template: boldial
+*/
+
+
+/* Import the original Parent Theme Styles */
+@import url("../boldial/style.css");

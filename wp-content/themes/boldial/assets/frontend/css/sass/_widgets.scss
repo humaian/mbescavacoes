@@ -1,0 +1,290 @@
+// Vars ****************************************************************************************************************
+
+
+
+// Mixins **************************************************************************************************************
+
+
+
+// Extends *************************************************************************************************************
+
+
+
+// Placeholders ********************************************************************************************************
+%_widget_link {
+	font-weight: 500;
+	font-size: 15px !important;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+%_widget_button {
+	@extend %_widget_link;
+	@extend %_rounded-corners;
+	padding: 4px 9px 5px;
+	margin: 0 5px 5px 0;
+	float: left;
+}
+
+
+
+// General -------------------------------------------------------------------------------------------------------------
+
+// Bug with wrong row number if the same sidebar is used multiple times
+.ish-main-sidebar .widget {
+	margin-left: 0;
+}
+
+.widget {
+
+	div, a, ul, li, select {
+		font-size: 14px;
+	}
+
+	ul, li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		ul {
+			padding: 0 0 0 15px;
+		}
+
+		li {
+			padding: 2px 0;
+		}
+	}
+
+	select {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		@extend %_rounded-corners;
+	}
+
+	a {
+		@extend %_trans-on;
+		text-decoration: none;
+	}
+}
+
+.widget-title, .widget-title a {
+	font-size: 19px;
+	padding-bottom: 15px;
+}
+
+
+// IshYoBoy widgets ****************************************************************************************************
+
+// Images widgets ------------------------------------------------------------------------------------------------------
+$w_iwidth: 33.3%;
+// Dribbble widget
+.widget_ishyoboy-dribbble-widget {
+	.dribbble-widget {
+		-webkit-transform: translateZ(0);
+
+		a {
+			img {
+				width: $w_iwidth;
+			}
+		}
+	}
+
+	.ish-button-small {
+		@extend %_widget_link;
+	}
+}
+
+// Flickr widget
+.widget_ishyoboy-flickr-widget {
+	#flickr_badge_wrapper {
+		div {
+			width: $w_iwidth;
+			height: auto;
+			margin: 0;
+			-webkit-transform: translateZ(0);
+			float: left;
+
+			a {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.ish-button-small {
+		@extend %_widget_link;
+	}
+}
+
+// Recent posts
+.widget_ishyoboy-recent-portfolio-widget {
+	.recent-projects-widget {
+		display: table;
+
+		li {
+			padding: 0;
+			float: left;
+			width: $w_iwidth !important;
+			-webkit-transform: translateZ(0);
+
+			a {
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.ish-button-small {
+		@extend %_widget_link;
+	}
+}
+
+// Dribbble & flickr widget common defs
+.widget_ishyoboy-dribbble-widget .dribbble-widget,
+.widget_ishyoboy-flickr-widget #flickr_badge_wrapper,
+.widget_ishyoboy-recent-portfolio-widget .recent-projects-widget {
+	a {
+		@extend %_trans-on;
+
+		&:hover {
+			opacity: 1 !important;
+		}
+	}
+
+	&:hover {
+		a {
+			opacity: 0.35
+		}
+	}
+}
+
+// Twitter widget
+.widget_ishyoboy-twitter-widget {
+	.tweet {
+		padding: 0 0 15px;
+
+		&:last-child {
+			padding: 0;
+		}
+
+		.tweet-details {
+			margin-top: -5px;
+
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.ish-button-small {
+		@extend %_widget_link;
+	}
+}
+
+
+// WordPress widgets ***************************************************************************************************
+
+// Calendar widget
+.widget_calendar {
+	#wp-calendar {
+		width: 100%;
+
+		caption {
+			font-weight: 700;
+			padding-bottom: 5px;
+			@extend %_widget_link;
+			display: table-caption;
+			margin-top: 0;
+		}
+
+		thead {
+			th {
+				text-align: left;
+			}
+		}
+
+		tfoot {
+			a {
+				@extend %_widget_link;
+			}
+		}
+
+		#today {
+			font-weight: 700;
+		}
+	}
+}
+
+// Tag cloud widget
+.widget_tag_cloud {
+	a {
+		@extend %_widget_button;
+		margin-bottom: 7px !important;
+	}
+}
+
+// RSS widget
+.widget_rss {
+	.widget-title {
+		a {
+			img {
+				display: none;
+			}
+		}
+	}
+
+	.rss-date, cite {
+		font-size: 12px;
+	}
+
+	cite {
+		padding-bottom: 10px;
+		display: inline-block;
+	}
+
+	ul li:last-child cite {
+		padding: 0;
+	}
+}
+
+// Search widget
+.widget_search {
+	form {
+		div {
+			position: relative;
+			width: 100%;
+			@extend %_rounded-corners;
+
+			input[type="text"] {
+				width: 100%;
+				@extend %_box-sizing;
+				padding-right: 50px;
+				background: none;
+				font-size: 16px;
+			}
+
+			input[type="submit"] {
+				font-family: "ish-fontello" !important;
+				font-size: 18px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				padding: 9px 12px 8px 13px;
+				background: none;
+				@extend %_trans-on;
+				@extend %_rounded-corners;
+			}
+		}
+	}
+}
+
+// More than 1 shortcode inside full widget - margin bottom
+.ish-grid12.widget .textwidget > .ish-sc-element:last-child {
+	margin-bottom: 0 !important;
+}

@@ -1,0 +1,1012 @@
+// Vars ****************************************************************************************************************
+
+/*
+	Change height of header
+
+		CSS:
+		body.ish-sticky-on .ish-body { padding-top: 100px; }
+		.ish-sticky-on .ish-part_header + *:before { top: -100px; height: 100px; }
+		.ish-part_header .ish-row_inner { height: 100px; }
+		.ish-ph-logo img { max-height: 50px; }
+
+		JS:
+		var headerHeight = 100;
+
+	Change height of sticky
+
+		CSS:
+		.ish-sticky-scrolling .ish-ph-logo img { max-height: 40px; }
+
+		JS:
+		var headerStickyHeight = 50;
+}
+*/
+$header_height: 100px;  // header, sticky, body padding-top
+
+
+
+// Mixins **************************************************************************************************************
+
+
+
+// Extends *************************************************************************************************************
+
+
+
+// Placeholders ********************************************************************************************************
+
+
+
+// Body ****************************************************************************************************************
+
+
+// In General ----------------------------------------------------------------------------------------------------------
+p {
+	margin: 0 0 20px;
+}
+
+* p:last-child {
+	margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.ish-h1, .ish-h2, .ish-h3, .ish-h4, .ish-h5, .ish-h6 {
+	padding: 0;
+	margin: 0 !important; /* !important because of VC */
+
+	-ms-word-break: break-all;
+	word-break: break-all;
+
+	// Non standard for webkit
+	word-break: break-word;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+
+	a {
+		font-size: inherit;
+	}
+}
+
+// Back to top button
+.ish-back_to_top {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	@extend %_rounded-corners;
+	text-decoration: none;
+	font-size: 24px;
+	border: 2px solid;
+	padding: 7px 5px 10px;
+	z-index: 999;
+
+	&:hover {
+		@extend %_trans-on;
+	}
+}
+
+// Forms - Contact form 7
+input, textarea, select {
+	border: none;
+	padding: 10px 12px;
+	margin: 0;
+	@extend %_rounded-corners;
+}
+
+input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], input[type="file"],
+textarea, select {
+	width: 100%;
+	@extend %_box-sizing;
+}
+
+.wpcf7-list-item {
+	margin-left: 0 !important;
+	margin-right: 10px;
+
+	input[type="radio"], input[type="checkbox"] {
+		position: relative;
+		top: 1px;
+	}
+}
+
+input[type="submit"] {
+	font-size: 15px;
+	font-weight: 500;
+	cursor: pointer;
+	@extend %_trans-on;
+}
+
+.wpcf7-validation-errors, .wpcf7-mail-sent-ok,
+.ish-alert-notice {
+	border: none !important;
+	padding: 10px !important;
+	width: 100%;
+	margin: 0 0 20px !important;
+	@extend %_rounded-corners;
+	@extend %_box-sizing;
+	font-weight: 700;
+}
+// In General END
+
+
+// .ish-body ------------------------------------------------------------------------------------------------
+.ish-body {
+	// for side-nav purpose mainly
+	position: relative;
+}
+// .ish-body END
+
+
+// .ish-part_expandable ------------------------------------------------------------------------------------------------
+.ish-part_expandable {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	max-width: 100% !important;
+	z-index: 999999;
+	height: 100%;
+	display: none;
+	background: none !important;
+
+	.ish-pe-bg {
+		min-height: 100%;
+	}
+}
+
+.ish-ph-expandable_btn {
+	a {
+		&:before {
+			font-size: 19px !important;
+			position: relative;
+			top: 2px;
+			line-height: 16px;
+		}
+	}
+}
+// .ish-part_expandable END
+
+// .ish-ph-lng-selector ------------------------------------------------------------------------------------------------
+.ish-ph-lng-selector {
+	> a span{
+		display: none;
+	}
+
+
+	> a {
+		&:before {
+			font-size: 16px !important;
+		}
+	}
+
+	img.ish-lng-img {
+		vertical-align: baseline;
+		margin-bottom: -1px;
+	}
+}
+// .ish-ph-lng-selector END
+
+// .ish-ph-lng-selector, .ish-ph-expandable_btn, .ish-ph-mn-search{}
+
+// .ish-part_header ----------------------------------------------------------------------------------------------------
+
+// Sticky navigation
+body.ish-sticky-on .ish-body {
+	padding-top: $header_height;
+}
+
+.ish-sticky-on .ish-part_header {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+.ish-part_header {
+	@extend %_clearfix;
+	width: 100%;
+	z-index: 99;
+	position: relative;
+
+	.ish-row_inner {
+		@extend %_clearfix;
+		padding-top: 0;
+		padding-bottom: 0 !important;
+		position: relative;
+
+		height: $header_height;
+
+		@extend %_trans-on;
+
+		&:before {
+			content: "";
+			width: 70px;
+			position: absolute;
+			border-bottom: 10px solid;
+			bottom: -5px;
+			@extend %_trans-on;
+		}
+	}
+
+	// I'm scrolling down
+	&.ish-sticky-scrolling {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+		.ish-row_inner:before {
+			display: none;
+		}
+	}
+
+	// Sticky bottom animation margin fix
+	& + * {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -$header_height;
+			width: 100%;
+			height: $header_height;
+		}
+	}
+}
+
+.ish-ph-logo {
+	float: left;
+	font-weight: 700;
+	@extend %_trans-on;
+	display: table;
+	margin: 0 10px 0 0;
+	height: 100%;
+
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+
+	&, span {
+		text-decoration: none;
+	}
+
+	span {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 30px;
+
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 50px;
+		@extend %_trans-on;
+
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+.ish-sticky-scrolling .ish-ph-logo img {
+	max-height: 40px;
+}
+
+.ish-ph-wp_tagline {
+	display: table;
+	height: 100%;
+	float: left;
+	font-size: 12px;
+
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+
+	span {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+// Main navigation
+.ish-ph-main_nav {
+	float: right;
+	position: relative;
+	display: table;
+	height: 100%;
+
+	ul, li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		a {
+			text-decoration: none;
+			font-weight: 500;
+			@extend %_rounded-corners;
+			@extend %_trans-on;
+		}
+	}
+
+	li {
+		@extend %_trans-on;
+	}
+
+	> ul {
+		max-width: 100%;
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+
+		> li {
+			display: inline-block;
+			position: relative;
+			float: left;
+			margin: 0 1px 0 0;
+			margin-top: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			> a {
+				display: inline-block;
+				white-space: nowrap;
+				padding: 6px 10px 7px;
+				margin: 0 0 10px;
+			}
+
+			ul {
+				display: none;
+				position: absolute;
+				@extend %_rounded-corners;
+				top: 100%;
+				z-index: 9999;
+				padding-bottom: 3px;
+				padding-top: 3px;
+
+				li {
+					padding: 1px 10px 2px;
+
+					a {
+						display: block;
+						white-space: nowrap;
+						margin: 0;
+					}
+				}
+
+				li {
+					position: relative;
+
+					ul {
+						display: none;
+						position: absolute;
+						top: 0;
+						left: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	// Responsive 2 buttons navigation
+	.ish-ph-mn-resp_nav.ish-ph-mn-hidden {
+		display: none;
+	}
+}
+
+.ish-ph-mn-search, .ish-ph-mn-resp_menu, .ish-ph-expandable_btn, .ish-ph-lng-selector  {
+
+	a {
+		padding-left: 3px;
+		padding-right: 3px;
+
+		&:before {
+			font-size: 14px;
+			margin: 0;
+		}
+	}
+
+	&:first-child {
+		margin-left: 10px;
+	}
+}
+
+// Responsive state of main navigation - js clone
+.ish-ph-mn-be_resp {
+	position: fixed;
+	top: -16px;
+	left: 0;
+	z-index: 999997;
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 100%;
+	padding: 25px;
+
+	&, li {
+		list-style: none;
+	}
+
+	li {
+
+		a {
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 18px;
+			@extend %_trans-on;
+			line-height: 30px;
+			border-bottom: 1px solid;
+			display: block;
+			padding: 5px 0;
+		}
+
+		ul.sub-menu {
+			padding: 0 0 0 25px;
+		}
+	}
+
+	.ish-ph-mn-be_resp-close {
+		font-size: 30px;
+	}
+
+	// Hide search button in responsive navigation
+	.ish-ph-mn-search {
+		display: none;
+	}
+
+	// Hide expandable button in responsive navigation
+	.ish-ph-expandable_btn {
+		display: none;
+	}
+
+	// Hide language selector button in responsive navigation
+	.ish-ph-lng-selector{
+		display: none;
+	}
+}
+
+// Navigation icons
+
+.ish-nav-ic-item {
+
+	.ish-nav-ic:before{
+		margin: 0;
+	}
+}
+
+.ish-ph-main_nav .ish-nav-ic-item.hide-text {
+
+	.ish-nav-ic-text {
+		display: none;
+	}
+
+}
+
+
+// .ish-part_header END
+
+
+// .ish-part_searchbar ---------------------------------------------------------------------------------------------------
+.ish-part_searchbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 100%;
+	z-index: 999998;
+	display: none;
+
+	input[type="text"] {
+		background: none;
+		border: none;
+		position: absolute;
+		outline: none;
+		@extend %_box-sizing;
+		width: 100%;
+		height: 100px;
+		top: 50%;
+		margin-top: -50px;
+	}
+}
+
+.ish-ps-searchform_close, .ish-ph-mn-be_resp-close, .ish-pe-close, .ish-sidenav-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 15px 10px;
+	display: block;
+	@extend %_trans-on;
+}
+// .ish-part_searchbar END
+
+
+// .ish-sidenav --------------------------------------------------------------------------------------------------------
+.ish-sidenav {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 280px;
+	max-width: 280px;
+	padding: 20px;
+	min-height: 100%;
+	overflow: auto;
+
+	box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, .25);
+
+	&.ish-sn_left {
+		box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, .25);
+	}
+
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	ul.sub-menu{
+		margin-left: 20px;
+	}
+
+	a {
+		@extend %_trans-on;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 30px;
+		border-bottom: 1px solid #fff;
+		display: block;
+	}
+
+	// Right after ish-body
+	& + .ish-body {
+
+	}
+
+	.ish-sidenav-close {
+		border-bottom: none;
+		font-size: 30px;
+	}
+}
+// .ish-sidenav END
+
+
+// .ish-part_tagline ---------------------------------------------------------------------------------------------------
+.ish-part_tagline {
+
+	&.ish-tagline-image .ish-overlay,
+	&.ish-tagline-colored .ish-overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&.ish-tagline-image > .ish-row,
+	&.ish-tagline-colored > .ish-row{
+		position: relative;
+	}
+
+}
+// .ish-part_tagline END
+
+
+// .ish-part_breadcrumbs -----------------------------------------------------------------------------------------------
+.ish-part_breadcrumbs {
+	font-weight: 700;
+
+	div {
+		font-size: 12px;
+	}
+}
+
+.ish-pb-breadcrumbs {
+	display: inline-table;
+	height: 50px;
+	float: left;
+
+	> div {
+		display: table;
+		height: 100%;
+
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+
+			a, span {
+				padding: 0 5px;
+				text-decoration: none;
+				@extend %_trans-on;
+			}
+		}
+	}
+}
+
+.ie9 .ish-pb-breadcrumbs div div,
+.ie10 .ish-pb-breadcrumbs div div {
+	padding-top: 12px;
+}
+
+.ish-pb-breadcrumbs-home {
+	padding-left: 0 !important;
+	font-weight: normal;
+
+	&:before {
+		display: inline-block;
+		content: '\e800';
+		font-family: "ish-fontello";
+		font-size: 18px;
+		position: relative;
+		top: 2px;
+	}
+
+	span {
+		display: none;
+	}
+}
+
+.ish-pb-breadcrumbs a.home{
+	padding-left: 0;
+	font-weight: normal;
+
+	.ish-pb-breadcrumbs-home{
+		padding: 0;
+	}
+}
+
+.ish-pb-socials {
+	float: right;
+
+	.ish-sc_icon {
+		margin-bottom: 0 !important;
+		margin-right: 0 !important;
+		float: left;
+		width: 50px;
+		height: 50px;
+
+		a {
+			display: block;
+			@extend %_trans-on;
+			text-decoration: none;
+
+			span {
+				width: 50px;
+				height: 50px;
+				@extend %_trans-on;
+
+				span {
+					opacity: 0.5;
+					font-size: 18px;
+				}
+			}
+
+			&:hover {
+				> span {
+					background: transparent;
+
+					span {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+// .ish-part_breadcrumbs END
+
+
+// .ish-part_content ---------------------------------------------------------------------------------------------------
+.ish-part_content .ish-sc-element a:hover, .ish-part_content .wpb_text_column a:hover, .ish-comments-form a:hover {
+	text-decoration: underline;
+	@extend %_trans-on;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.ish-part_content {
+
+	// FIX for portfolio blinking and parallax static / dynamic
+	.ish-has-portfolio {
+		.ish-vc_row_inner, .ish-row_inner {
+			position: relative;
+			-webkit-backface-visibility: hidden;
+			overflow: hidden;
+			transform-style: preserve-3d;
+		}
+	}
+
+	a {
+		@extend %_trans-on;
+		text-decoration: underline;
+	}
+
+	// Columns alignment
+	.wpb_column {
+		&.ish-left > .wpb_wrapper {
+			text-align: left;
+		}
+
+		&.ish-center > .wpb_wrapper {
+			text-align: center;
+		}
+
+		&.ish-right > .wpb_wrapper {
+			text-align: right;
+		}
+	}
+
+	// Blog & Portfolio section filter
+	.ish-section-filter {
+		.ish-vc_row_inner:before {
+			display: none
+		}
+
+		ul, li {
+			list-style: none;
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		ul {
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			display: inline-block;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		a {
+			text-decoration: none;
+			margin: 0 5px;
+			@extend %_trans-on;
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+	}
+
+	// Blog & Content video
+	.wp-video{
+		max-width: 100%;
+	}
+
+	.wp-video-shortcode, .wp-audio-shortcode {
+		max-width: 100%;
+	}
+
+	// Non-VC Content fixes
+	.ish-maybe-empty .ish-vc_row_inner:empty {
+		padding-bottom: 25px;
+	}
+
+}
+
+// Video embed load fix
+.ish-blog-video-content, .ish-sc_embed {
+	iframe {
+		display: none;
+	}
+}
+
+
+// Pagination
+.ish-pagination {
+	text-align: center;
+
+	a, span {
+		min-width: 35px;
+		/*padding: 4px 10px 5px;
+		text-align: center;
+		margin: 0 5px 0 0;
+		font-weight: 500;
+		font-size: 16px;
+		text-decoration: none !important;
+		@extend %_rounded-corners;
+		@extend %_trans-on*/
+	}
+
+	@extend %_sc_button;
+}
+
+
+// prev next
+.ish-single_post_navigation {
+
+	a {
+		float: left;
+		margin: 0 5px 6px 0 !important;
+	}
+
+	@extend %_sc_button;
+}
+
+
+// Comments
+.ish-comments-headline {
+	position: relative;
+	padding-top: 25px;
+	margin-top: 35px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 70px;
+		height: 10px;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+}
+
+.ish-add-comment-headline {}
+
+.ish-comments {
+	$padding: 10px;
+
+	list-style: none;
+	padding: 0;
+
+	li.comment {
+		list-style: none;
+		display: block;
+		width: 100%;
+		padding: $padding;
+		@extend %_clearfix;
+		@extend %_box-sizing;
+		position: relative;
+		margin: 0 0 $padding;
+
+		.comment-avatar {
+			float: left;
+			display: inline-block;
+			width: 70px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 14px;
+
+			img {
+				width: 70px;
+				height: 70px;
+				display: block;
+				@extend %_clearfix;
+				margin-bottom: 5px;
+			}
+		}
+
+		div {
+			width: 100%;
+			padding-left: 80px;
+			@extend %_box-sizing;
+
+			h5 {
+				display: inline-block;
+			}
+
+			span, p {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+	}
+
+	ul.children {
+		padding: 0 0 0 90px;
+	}
+
+	.comment-reply-link, .comment-edit-link, .comment-awaiting-moderation {
+		font-size: 12px;
+		padding: 0 0 0 5px;
+		font-weight: 500;
+	}
+}
+
+.ish-comments-form {
+	textarea {
+		height: 157px;
+	}
+}
+
+.ish-comments + .ish-comments-form,
+.ish-comments + .ish-pagination + .ish-comments-form,
+.single-post .ish-comments-form {
+	position: relative;
+	padding-top: 20px;
+	margin-top: 35px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 70px;
+		height: 10px;
+		top: 0;
+		left: 0;
+		margin-top: -10px;
+	}
+}
+
+// Search results
+.ish-search-result .ish-search-result-image{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 5px !important;
+	text-align: center;
+}
+
+.ish-search-result .ish-search-result-image a,
+.ish-search-result .ish-search-result-image span {
+	display: block;
+}
+
+.ish-search-result .ish-sc_headline{
+	margin-bottom: 8px !important
+}
+
+// Preloader
+.ish-preloader {
+	background-image: url('assets/frontend/images/ish-spinner.svg');
+	width: 30px;
+	height: 30px;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	opacity: .2;
+	-webkit-animation: rotate 1.5s infinite steps(12);
+	-moz-animation: rotate 1.5s infinite steps(12);
+	-ms-animation: rotate 1.5s infinite steps(12);
+	-o-animation: rotate 1.5s infinite steps(12);
+	animation: rotate 1.5s infinite steps(12);
+}
+// CSS preloader animation
+@keyframes rotate { from { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); } to { -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
+@-moz-keyframes rotate { from { -moz-transform: rotate(0deg); transform: rotate(0deg); } to { -moz-transform: rotate(360deg); transform: rotate(360deg); } }
+@-webkit-keyframes rotate { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); } to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@-ms-keyframes rotate { from { -ms-transform: rotate(0deg); transform: rotate(0deg); } to { -ms-transform: rotate(360deg); transform: rotate(360deg); } }
+@-o-keyframes rotate { from { -o-transform: rotate(0deg); transform: rotate(0deg); } to { -o-transform: rotate(360deg); transform: rotate(360deg); } }
+// .ish-part_content END
+
+
+// .ish-part_footer ----------------------------------------------------------------------------------------------------
+.ish-part_footer {
+	.ish-row {
+		background-color: transparent !important;
+	}
+}
+// .ish-part_footer END
+
+
+// .ish-part_legals ----------------------------------------------------------------------------------------------------
+.ish-part_legals {
+
+	.ish-row_inner {
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	a {
+		@extend %_trans-on;
+		text-decoration: none;
+	}
+}
+// .ish-part_legals END

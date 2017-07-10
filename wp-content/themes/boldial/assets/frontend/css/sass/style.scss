@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+
+/*!
+
+	Theme Name: Boldial
+	Theme URI: http://themes.ishyoboy.com/boldial/wp/
+	Author: IshYoBoy
+	Author URI: http://ishyoboy.com
+	Description: Boldial is a neat and fresh corporate WordPress theme perfectly suitable for small and large business companies. It’s multilingual ready and woocommerce compatible packed with outstanding set of shortcodes and options.
+	Version: 2.3
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, right-sidebar, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, theme-options, threaded-comments, translation-ready, holiday, photoblogging, seasonal
+
+*/
+
+
+
+@import "normalize",
+
+		"general",
+
+		"grid",
+
+		"layout",
+
+		"content",
+
+		"shortcodes",
+
+		"blog",
+
+		"portfolio",
+
+		"widgets",
+
+		"wordpress",
+
+		"plugins";
